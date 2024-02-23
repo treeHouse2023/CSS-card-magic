@@ -1,0 +1,43 @@
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 25px #000;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: preserve-3d;
+    perspective: 2000px;
+    margin-left: 320px;
+    margin-top: 80px;
+  }
+  
+  .cover {
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .book:hover .cover {
+    transition: 0.6s;
+    transform: rotatez(-180deg);
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
